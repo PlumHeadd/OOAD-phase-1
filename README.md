@@ -41,6 +41,6 @@ Bite Bright is an innovative diet management system designed to go beyond tradit
 
 - **Frontend**:java, HTML, CSS
 - **Backend**: MySQL,MSQL benchmark
-- **Wearable Devices**: Fitbit, Apple Watch (via API integration)
+- **Wearable Devices**: Fitbit, Apple Watch
 
 
