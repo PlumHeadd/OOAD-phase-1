@@ -44,9 +44,4 @@ Bite Bright is an innovative diet management system designed to go beyond tradit
 - **Cloud**: Deployed on a server supporting MySQL and web technologies
 - **Wearable Devices**: Fitbit, Apple Watch (via API integration)
 
-## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/bite-bright.git
-   cd bite-bright
