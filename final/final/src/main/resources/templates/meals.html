@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Meals</title>
+</head>
+<body>
+<h1>Meals</h1>
+<form action="/meals" method="post">
+    <input type="text" name="type" placeholder="Meal Type (e.g., Breakfast)" required>
+    <input type="text" name="category" placeholder="Category (e.g., Healthy, Unhealthy)" required>
+    <input type="text" name="portion" placeholder="Portion Size" required>
+    <button type="submit">Add Meal</button>
+</form>
+<ul>
+    <li th:each="meal : ${meals}">
+        <span th:text="${meal.type}"></span> -
+        <span th:text="${meal.category}"></span> -
+        <span th:text="${meal.portion}"></span>
+    </li>
+</ul>
+</body>
+</html>

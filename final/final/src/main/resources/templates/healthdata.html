@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Health Data</title>
+</head>
+<body>
+<h1>Health Data</h1>
+<form action="/healthdata" method="post">
+    <input type="text" name="heartRate" placeholder="Heart Rate" required>
+    <input type="text" name="steps" placeholder="Steps Taken" required>
+    <input type="text" name="caloriesBurned" placeholder="Calories Burned" required>
+    <button type="submit">Add Health Data</button>
+</form>
+<ul>
+    <li th:each="data : ${healthData}">
+        <span>Heart Rate: </span><span th:text="${data.heartRate}"></span>,
+        <span>Steps: </span><span th:text="${data.steps}"></span>,
+        <span>Calories Burned: </span><span th:text="${data.caloriesBurned}"></span>
+    </li>
+</ul>
+</body>
+</html>
